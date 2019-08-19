@@ -1,7 +1,7 @@
-import { FETCH_DOG_SUCCESS } from '../../constants/actionTypes';
+import { FETCH_DOG_SUCCESS } from "../../constants/actionTypes";
 
 export const initialState = {
-  url: '',
+  url: ""
 };
 
 export default function dogReducer(state = initialState, action) {
@@ -9,8 +9,8 @@ export default function dogReducer(state = initialState, action) {
     case FETCH_DOG_SUCCESS: {
       return {
         ...state,
-        url: action.payload.url,
-      }
+        url: action.payload.url
+      };
     }
     default:
       return state;

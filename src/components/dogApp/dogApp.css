@@ -1,6 +1,11 @@
 .app-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-color: white;
+  outline: 10px solid rgb(255, 160, 160);
+  outline-offset: -10px;
 }

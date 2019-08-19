@@ -1,24 +1,25 @@
-.random-dog-container {
+.random-animal-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.dog-button {
+.animal-button {
   background-color: #191919;
   color: #fff;
   font-size: 36px;
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 24px;
+
   width: 400px;
 }
 
-.dog-placeholder {
+.animal-placeholder {
   font-size: 24px;
 }
 
-.dog-image {
+.animal-image {
   width: 400px;
 }
