@@ -37,6 +37,7 @@ export class DogApp extends Component {
   render() {
     return (
       <motion.div
+        data-testid="app-container"
         className="app-container"
         initial="hidden"
         animate="visible"

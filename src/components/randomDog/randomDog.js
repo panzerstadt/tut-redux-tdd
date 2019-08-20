@@ -24,7 +24,7 @@ class RandomDog extends Component {
 
   render() {
     return (
-      <div className="random-dog-container">
+      <div className="random-dog-container" data-testid="randomdog-container">
         <motion.button
           className="dog-button"
           onClick={() => this.props.fetchDog()}

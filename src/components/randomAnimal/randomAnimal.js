@@ -14,7 +14,10 @@ const buttonVariant = {
 
 const RandomAnimal = ({ animalUrl = "", fetchAnimal = f => f }) => {
   return (
-    <div className="random-animal-container">
+    <div
+      className="random-animal-container"
+      data-testid="randomanimal-container"
+    >
       <motion.button
         className="animal-button"
         onClick={() => fetchAnimal()}
@@ -23,13 +26,19 @@ const RandomAnimal = ({ animalUrl = "", fetchAnimal = f => f }) => {
         variants={buttonVariant}
         whileHover="hovered"
         whileTap="pressed"
+        data-testid="animal-button"
       >
         GET ME A CAT
       </motion.button>
       {animalUrl ? (
-        <img className="animal-image" src={animalUrl} alt="animaly" />
+        <img
+          className="animal-image"
+          src={animalUrl}
+          alt="animaly"
+          data-testid="animal-img"
+        />
       ) : (
-        <div className="animal-placeholder">
+        <div className="animal-placeholder" data-testid="animal-placeholder">
           No Animal loaded yet. Come get me!
         </div>
       )}
