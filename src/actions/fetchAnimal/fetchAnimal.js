@@ -47,7 +47,6 @@ const fetchCat = () => {
   // returns a thunk
   return dispatch => {
     dispatch(fetchAnimalRequest()); // start
-    console.log("fetching a cat!");
     return axios
       .get("https://aws.random.cat/meow")
       .then(response => response.data)

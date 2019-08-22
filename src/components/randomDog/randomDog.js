@@ -27,6 +27,7 @@ class RandomDog extends Component {
       <div className="random-dog-container" data-testid="randomdog-container">
         <motion.button
           className="dog-button"
+          data-testid="dog-button"
           onClick={() => this.props.fetchDog()}
           initial="hidden"
           animate="visible"
@@ -43,9 +44,20 @@ class RandomDog extends Component {
 
   renderDogSection() {
     if (this.props.dogUrl) {
-      return <img className="dog-image" src={this.props.dogUrl} alt="doggo" />;
+      return (
+        <img
+          className="dog-image"
+          data-testid="dog-img"
+          src={this.props.dogUrl}
+          alt="doggo"
+        />
+      );
     }
-    return <div className="dog-placeholder">No dog loaded yet. Get some!</div>;
+    return (
+      <div className="dog-placeholder" data-testid="dog-placeholder">
+        No dog loaded yet. Get some!
+      </div>
+    );
   }
 }
 

@@ -13,6 +13,7 @@
   cursor: pointer;
   margin-bottom: 24px;
   width: 400px;
+  outline: none;
 }
 
 .dog-placeholder {

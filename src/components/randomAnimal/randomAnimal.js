@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const buttonVariant = {
   hidden: { opacity: 0, x: 100 },
   visible: { opacity: 1, x: 0, transition: { delay: 1.5 } },
-  hovered: { backgroundColor: "rgb(255, 176, 189)", scale: 1.2 },
+  hovered: { backgroundColor: "rgb(255, 176, 189)", scale: 1.05 },
   pressed: { scale: 0.9 }
 };
 
